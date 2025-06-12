@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de notas</title>
+</head>
+<script src="app.js"></script>
+<body>
+    <form id="form">
+        <h1>Tabela de notas</h1>
+        <h4>Adicione suas notas:</h4>
+
+        <select name="materias" id="materias" style="width: 200px;">
+            <option value="Portugues">Portugues</option>
+            <option value="Matematica">Matematica</option>
+            <option value="Geometria">Geometria</option>
+            <option value="Fisica">Fisica</option>
+            <option value="Quimica">Quimica</option>
+            <option value="Biologia">Biologia</option>
+            <option value="Historia">Historia</option>
+            <option value="Sociologia">Sociologia</option>
+            <option value="Artes">Artes</option>
+            <option value="Geografia">Geografia</option>
+        </select>
+        
+        <label for="escrita">Nota da Prova Escrita (peso 3):</label>
+        <input type="number" id="escrita" placeholder="0 a 3" min="0" max="3" step="0.1">
+
+        <label for="pratica">Nota da Prova Prática (peso 2):</label>
+        <input type="number" id="pratica" placeholder="0 a 2" min="0" max="2" step="0.1">
+
+        <label for="participacao">Nota de Participação (peso 2):</label>
+        <input type="number" id="participacao" placeholder="0 a 2" min="0" max="2" step="0.1">
+
+        <label for="simulado">Nota do Simulado (peso 3):</label>
+        <input type="number" id="simulado" placeholder="0 a 3" min="0" max="3" step="0.1">
+
+        <button type="submit">Salvar Nota</button>
+    </form>
+    <br>
+    <button onclick="load()">Carregar</button>
+    <br>
+    <p id="tabela"></p>
+
+</body>
+</html>
