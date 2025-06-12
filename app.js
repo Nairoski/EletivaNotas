@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             (simulado)
         );
 
-        notaFinal = notaFinal.toFixed(1); // deixa com duas casas decimais
+        notaFinal = notaFinal.toFixed(1); // deixa com uma casas decimais
 
         localStorage.setItem(materia, notaFinal);
     });
